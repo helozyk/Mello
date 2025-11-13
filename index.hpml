@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mello</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <header>
+    <p id="nome-usuario" class="mensagem-nome"></p>
+    <h1>Mello</h1>
+    <div class="idade-input">
+      <label for="idade">Digite sua idade:</label>
+      <input type="number" id="idade" name="idade">
+      <button onclick="validarIdade()">Confirmar</button>
+    </div>
+  </header>
+
+
+  <nav id="menu-generos" class="oculto">
+    <button onclick="mostrarFilmes('romance)">romance</button>
+    <button onclick="mostrarFilmes('comédia')">comédia</button>
+    <button onclick="mostrarFilmes('terror')">terror</button>
+  </nav>
+
+
+  <main id="conteudo-filmes"></main>
+
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
+
